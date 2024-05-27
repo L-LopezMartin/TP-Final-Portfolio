@@ -1,0 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    border: 1px;
+    border-color: coral;
+    border-style: solid;
+}
