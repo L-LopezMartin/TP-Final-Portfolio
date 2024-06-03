@@ -5,6 +5,20 @@
 
 *{
     border: 1px;
-    border-color: coral;
+    border-color: slategray;
     border-style: solid;
+}
+.columnflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.rowflex{
+    display: flex;
+    flex-direction: row;
+}
+.sectionReLoco{
+    background: darkslateblue;
+    width: 80%;
+    height: 30px;
 }
