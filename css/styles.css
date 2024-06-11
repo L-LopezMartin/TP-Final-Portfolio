@@ -1,24 +1,215 @@
+:root{
+    --contrast_c1: rgb(232, 106, 66); /* Banner, detalles */
+    --contrast_c2:rgb(232, 109, 70); /* Contact us */
+    --bkg_c1:rgb(23, 22, 26); /* Gris oscuro */
+    --bkg_c2:rgb(28, 27, 31); /* Gris claro */ 
+    --bkg_c3:rgb(35, 34, 38); /* Client review */
+    --hover_c1:rgb(217, 44, 10); /* Botón hero */
+    --font_c1:rgb(230, 230, 230); /* Texto principal */ 
+    --font_c2: rgb(193, 193, 194); /* Texto secundario */
+    --font_c3: rgb(232, 106, 66); /* Pequeños títulos */ 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
+    color: var(--font_c1);
+    font-family: 'IBM Plex Sans';
 }
 
 *{
     border: 1px;
     border-color: slategray;
-    border-style: solid;
+    /* border-style: solid; */
 }
-.columnflex{
+
+.columnflex{ display: flex; flex-direction: column;}
+.rowflex{ display: flex; flex-direction: row;}
+.yCenterFlex{ align-items: center;}
+.bkgColor1{ background-color: var(--bkg_c1);}
+.bkgColor2{ background-color: var(--bkg_c2); }
+.bkgColor3{ background-color: var(--bkg_c3); }
+.contrastColor1{ background-color: var(--contrast_c1); }
+.contrastColor2{ background-color: var(--contrast_c2); }
+
+body footer, body header, body main section{
+    padding: 0 10vw;
+}
+
+/*#region Header */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+.header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+}
+.header nav a{
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bi-chevron-down{
+    font-size: 16px;
+}
+.header button{
+    padding: 16px 30px;
+    color: var(--contrast_c2);
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--font_c1);
+}
+.header button:hover{
+    cursor: pointer;
+}
+/*#endregion*/
+
+/*#region Hero*/
+.hero{
+    background-color: var(--bkg_c1);
+    display: flex;
+    flex-direction: row;
+    background-image: none;
+    height: 70vh;
+}
+.heroDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1{
+    font-weight: none;
+    font-family: 'Playafair Display';
+    font-size: 60px;
+    margin: 10px 0 20px 0;
+}
+h1 span{
+    color: var(--font_c3);
+    font-family: 'Playafair Display';
+}
+.hero h2{
+    color: var(--font_c2);
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.hero h3{
+    color: var(--font_c2);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.contacto h4{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.contacto p{
+    color: var(--font_c2);
+}
+.hero botones{
+    margin: 20px, 0, 20px, 0;
+}
+.botones button{
+    background-color: hsla(0, 0%, 0%, 0);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-weight: bold;
+    margin: 40px 10px 40px 10px;
+}
+.botones button:hover{
+    cursor: pointer;
+    background-color: var(--hover_c1);
+    border-color: var(--hover_c1);
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contacto div{
+    margin: 20px;
+}
+.contacto hr{
+    background-color: grey;
+    height: 50%;
+    width: 2px;
+}
+.videoSobreMi{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20vw;
+    top: 30vh;
+}
+/*#endregion */ 
+
+/*#region Bruce Banner */
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--contrast_c1);
+    height: 150px;
+}
+.banner h1{
+    font-size: 40px;
+}
+.estrella{
+    width: 50px;
+    height: 50px;
+    filter: invert(100%); /* Este filtro cambia el color de la imagen negra a blanca */
+}
+/*#endregion*/
+
+/*#region About me*/
+/*#endregion */
+
+/*#region My skills*/
+/*#endregion */
+
+/*#region How I work*/
+/*#endregion */
+
+/*#region Projects made*/
+/*#endregion*/
+
+/*#region Client reviews*/
+/*#endregion*/
+
+/*#region Contact us*/
+/*#endregion*/
+
+/*#region Footer*/
+.footer{
+    background-color: var(--bkg_c1);
     display: flex;
     flex-direction: column;
 }
 
-.rowflex{
+.fDivMed{
     display: flex;
     flex-direction: row;
 }
-.sectionReLoco{
-    background: darkslateblue;
-    width: 80%;
-    height: 30px;
+
+hr{
+    background-color: gray;
+    height: 2px;
+    width: 70vw;
 }
+
+.plus{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+/*#endregion*/

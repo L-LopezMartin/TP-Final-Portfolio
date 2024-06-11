@@ -4,63 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Leandro López</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header class="header rowflex">
+    <header class="header header bkgColor1">
 
-        <img src="https://placehold.co/100x50" alt="">
+        <img src="img/AllfolioLogo.png" alt="">
 
         <nav>
-            <a href="">Home</a>
-            <a href="">About Me</a>
-            <a href="">Portfolio</a>
-            <a href="">Services</a>
-            <a href="">Process</a>
-            <a href="">Review</a>
+            <a href="">INICIO</a>
+            <a href="">SOBRE MI</a>
+            <a href="">PORTFOLIO</a>
+            <a href="" class="rowflex yCenterFlex dropDown">
+                <p>SERVICIOS</p>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+            <a href="">PROCESO</a>
+            <a href="">RESEÑAS</a>
         </nav>
-
-        <button>Let's talk</button>
+        <a href="">
+            <button>Hablemos</button>
+        </a>
     </header>
 
     <main>
         <!-- Hero -->
-        <section class="hero">
-            <h3>Hola! Me llamo Leandro</h3>
-            <h1>Soy diseñador UI/UX</h1>
-            <h2>Creando experiencias digitales fluidas</h2>
-
-            <button>Contáctame</button>
-            <button>Ver curriculum</button>
-
-            <div class="rowflex">
-                <div class="columnflex">
-                    <h4>Email</h4>
-                    <p>leanlopezmartin@gmail.com</p>
+        <section class="hero bkgColor1">
+            <div class="heroDiv">
+                
+                <h3>Hola! Soy Leandro</h3>
+                <h1>Soy diseñador <span>UI/UX</span></h1>
+                <h2>Creador de experiencias digitales fluidas</h2>
+    
+                <div class="botones">
+                    <button>Contáctame</button>
+                    <button>Ver curriculum</button>
                 </div>
-
-                <div class="columnflex">
-                    <h4>Teléfono</h4>
-                    <p>+54 9 261 6183788</p>
-                </div>
-
-                <div class="columnflex">
-                    <h4>Ubicación</h4>
-                    <p>Mendoza, Argentina</p>
+    
+                <div class="contacto">
+                    <div class="columnflex">
+                        <h4>Email</h4>
+                        <p>leanejemplo@gmail.com</p>
+                    </div>
+                    <hr>
+                    <div class="columnflex">
+                        <h4>Teléfono</h4>
+                        <p>+54 9 261 6887381</p>
+                    </div>
+                    <hr>
+                    <div class="columnflex">
+                        <h4>Ubicación</h4>
+                        <p>Mendoza, Argentina</p>
+                    </div>
                 </div>
             </div>
+            <a href="">
+                <img src="img/Video About Me.png" alt="" class="videoSobreMi">
+            </a>
         </section>
         <!-- Fin Hero -->
 
         <!-- Inicio Banner -->
-        <section class="sectionReLoco">
-
+        <section class="banner">
+            <h1>Diseño Web</h1>
+            <img src="img/4PointStar.svg" alt="" class="estrella">
+            <h1>Investigación de usuario</h1>
+            <img src="img/4PointStar.svg" alt="" class="estrella">
+            <h1>Soluciones móviles</h1>
+            <img src="img/4PointStar.svg" alt="" class="estrella">
+            <h1>Soluciones UI/UX</h1>
         </section>
         <!-- Fin Banner -->
 
         <!-- About me -->
-        <section>
+        <section class="bkgColor1">
             <h3>Sobre mí</h3>
             <h2>Por qué contratarme</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem ipsam voluptatibus adipisci, necessitatibus deserunt perspiciatis sed itaque, cumque similique nemo officiis illo consequatur repellat quis, facilis aspernatur ullam sunt. Nulla.
@@ -89,8 +115,29 @@
         </section>
         <!-- Fin About me -->
 
+        <!-- My skills -->
+        <!-- Esta sección no estaba originalmente en la página-->
+        <section class="bkgColor1">
+            <h1> Mis habilidades </h1>
+            <div class="rowflex">
+                <div>
+                    <h2> Habilidad </h2>
+                    <img src="https://placehold.co/80" alt="">
+                </div>
+                <div>
+                    <h2> Habilidad </h2>
+                    <img src="https://placehold.co/80" alt="">
+                </div>
+                <div>
+                    <h2> Habilidad </h2>
+                    <img src="https://placehold.co/80" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Fin My Skills -->
+
         <!-- How I work -->
-        <section class="rowflex">
+        <section class="rowflex bkgColor2">
             <div>
                 <h1>Vea cómo trabajo</h1>
                 <!-- TODO flechita -->
@@ -133,7 +180,7 @@
         <!-- Fin How I work -->
         
         <!-- Projects made -->
-        <section>
+        <section class="bkgColor1">
             <h3>Proyectos</h3>
             <h2>Realizados</h2>
             <div>
@@ -170,12 +217,12 @@
         <!-- Fin Projects made -->
         
         <!-- Client reviews -->
-        <section class="rowflex">
+        <section class="rowflex bkgColor3">
             <div>
                 <h1>Vea lo que dicen los clientes</h1>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores cumque culpa modi cupiditate quam, molestiae debitis aliquam quae aliquid laborum commodi, suscipit voluptatibus placeat ea, amet ullam. Corrupti, laborum excepturi? </p>
                 <p>Mr Makiu</p>
-                <p>Marketing Director - Holalab</p>
+                <p>Director de Marketing - Holalab</p>
             </div>
 
             <img src="https://placehold.co/250x300" alt="">       
@@ -183,16 +230,32 @@
         <!-- Fin Client reviews -->
         
         <!-- Contact us -->
-        <section>
-            <h1>¿Listo para discutir tu proyecto?</h1>
-            <a href=""> Contáctame </a>
+        <section class="contrastColor2">
+            <div>
+                <h1>¿Listo para discutir tu proyecto?</h1>
+                <a href=""> Contáctame </a>
+            </div>
+
+            <!-- Esta parte del contact us no estaba en la página original -->
+            <div>
+                <form action="" class="columnflex">
+                    <label> Nombre </label>
+                    <input type="text" class="" placeholder="Tu nombre">
+                    <label> Email</label>
+                    <input type="text" class="" placeholder="Tu correo electrónico">
+                    <label> Nombre de empresa </label>
+                    <input type="text" class="" placeholder="Nombre de tu empresa">
+                    <label> Tu mensaje </label>
+                    <input type="text" class="" placeholder="Tu mensaje a enviar">
+                </form>
+                <button> Enviar </button>
+            </div>
         </section>
         <!-- Fin Contact us -->
 
     </main>
 
-    <!-- Mucho TODO en el footer -->
-    <footer>
+    <footer class="footer">
         <div class="rowflex">
             <div>
                 <p>Suscribe to our newsletter to stay in touch with the latest</p>
@@ -209,7 +272,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="columnflex">
                 <h3>Links útiles</h3>
                 <a href="">Proyectos</a>
                 <a href="">Servicios</a>
@@ -219,14 +282,19 @@
 
             <div>
                 <h3>Consultas</h3>
-                <p>leanlopezmartin@gmail.com.ar</p>
-                <p>+54 9 261 6183788</p>
+                <p>leanejemplo@gmail.com.ar</p>
+                <p>+54 9 261 6887381</p>
                 <p>sky_pe/leandro</p>
             </div>
 
         </div>
 
-        <h2>Mostrar todos los servicios</h2>
+        <div class="fDivMed">
+            <h2>Mostrar todos los servicios</h2>
+            <img src="img/PlusCircle.svg" alt="" class="plus">
+        </div>
+
+        <hr>
 
         <div class="rowflex">
             <p>© 2024 Allfolio - All right reserved</p>
