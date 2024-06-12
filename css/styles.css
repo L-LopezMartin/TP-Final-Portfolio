@@ -313,6 +313,24 @@ h1 span{
 /*#endregion */
 
 /*#region My skills*/
+.mySkills{
+    background-color: var(--bkg_c1);
+    margin: 50px 0;
+}
+.mySkills h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.skillList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mySkills img{
+    width: 100px;
+}
 /*#endregion */
 
 /*#region How I work*/
