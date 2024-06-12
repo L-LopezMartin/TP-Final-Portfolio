@@ -175,15 +175,18 @@ h1 span{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--contrast_c1);
     height: 150px;
+    padding: 0 5vw;
 }
 .banner h1{
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 600;
 }
 .estrella{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     filter: invert(100%); /* Este filtro cambia el color de la imagen negra a blanca */
 }
 /*#endregion*/
