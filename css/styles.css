@@ -16,13 +16,7 @@
     padding: 0px;
     margin: 0px;
     color: var(--font_c1);
-    font-family: 'IBM Plex Sans';
-}
-
-*{
-    border: 1px;
-    border-color: slategray;
-    /* border-style: solid; */
+    font-family: 'Playafair Display';
 }
 
 .columnflex{ display: flex; flex-direction: column;}
@@ -35,7 +29,15 @@
 .contrastColor2{ background-color: var(--contrast_c2); }
 
 body footer, body header, body main section{
-    padding: 0 10vw;
+    padding: 0 15vw;
+}
+
+body{ 
+    background-color: var(--bkg_c1);
+}
+
+button{
+    font-family: 'IBM Plex Sans';
 }
 
 /*#region Header */
@@ -57,6 +59,7 @@ body footer, body header, body main section{
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    font-family: 'IBM Plex Sans';
 }
 .bi-chevron-down{
     font-size: 16px;
@@ -67,6 +70,7 @@ body footer, body header, body main section{
     font-weight: bold;
     border-radius: 5px;
     background-color: var(--font_c1);
+    font-family: 'IBM Plex Sans';
 }
 .header button:hover{
     cursor: pointer;
@@ -74,11 +78,16 @@ body footer, body header, body main section{
 /*#endregion*/
 
 /*#region Hero*/
+
 .hero{
     background-color: var(--bkg_c1);
     display: flex;
+    background-image: url('../img/YoGrande.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 40%;
     flex-direction: row;
-    background-image: none;
     height: 70vh;
 }
 .heroDiv{
@@ -98,15 +107,16 @@ h1 span{
 }
 .hero h2{
     color: var(--font_c2);
-    font-family: 'Playfair Display';
     font-weight: normal;
     text-transform: capitalize;
     font-size: 30px;
+    font-family: 'IBM Plex Sans';
 }
 .hero h3{
     color: var(--font_c2);
     text-transform: uppercase;
     font-size: 15px;
+    font-family: 'IBM Plex Sans';
 }
 .contacto h4{
     font-weight: normal;
@@ -115,7 +125,7 @@ h1 span{
 .contacto p{
     color: var(--font_c2);
 }
-.hero botones{
+.hero .botones{
     margin: 20px, 0, 20px, 0;
 }
 .botones button{
@@ -172,6 +182,134 @@ h1 span{
 /*#endregion*/
 
 /*#region About me*/
+.aboutMe{
+    background-color: var(--bkg_c1);
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+.imagenesAboutMe{
+    height: 650px;
+}
+.itsaBorder .SNScontainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30%;
+    left: 10px;
+}
+.SNS{
+    border: 2px grey solid;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+.SNS:hover{
+    border: 2px var(--contrast_c1) solid;
+    background-color: var(--contrast_c1);
+}
+.itsaMe{
+    position: relative;
+    left: 100px;
+    width: 400px;
+    z-index: 1;
+    filter: grayscale(100%) saturate(100%) brightness(80%);
+    border-radius: 
+    5px;
+}
+.itsaBorder{
+    position: relative;
+    top: -450px;
+    width: 400px;
+    height: 525px;
+    border: 2px var(--contrast_c1) solid;
+    border-radius: 5px;
+}
+.infoAboutMe{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.infoAboutMe h1{
+    color: var(--font_c3);
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+}
+.infoAboutMe h2{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.infoAboutMe p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.infoAboutMe h3{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.campos{
+    display: flex;
+    flex-direction: row;
+}
+.campos .subCampos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.campos p{
+    text-align: center;
+    font-family: 'IBM Plex Sans';
+}
+.invUsr{
+    height: 70px;
+    width: 70px;
+    background-image: url('../img/90.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fluUsr{
+    height: 70px;
+    width: 70px;
+    background-image: url('../img/80.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esqPag{
+    height: 70px;
+    width: 70px;
+    background-image: url('../img/95.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pro{
+    height: 70px;
+    width: 70px;
+    background-image: url('../img/90.png');
+    background-size: 70px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*#endregion */
 
 /*#region My skills*/
