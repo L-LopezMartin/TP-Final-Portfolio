@@ -38,6 +38,7 @@ body{
 
 hr{
     border: 0;
+    border-radius: 10px;
 }
 
 button{
@@ -343,6 +344,123 @@ h1 span{
 /*#endregion */
 
 /*#region How I work*/
+.work{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bkg_c2);
+    justify-content: space-between;
+}
+.left{
+    margin: 0 20px;
+}
+.left p{
+    color: var(--font_c2);
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    line-height: 25px;
+}
+.work h1{
+    color: var(--font_c1);
+    font-size: 60px;
+    font-weight: 700;
+}
+.work i{
+    font-size: 60px;
+    color: var(--font_c3);
+}
+.ultBlogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+article{
+    background-color: rgb(37, 36, 39);
+    padding: 20px;
+    border-radius: 20px;
+}
+article img{
+    border-radius: 20px;
+    width: 400px;
+}
+.epigrafe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.epigrafe p{
+    color: var(--font_c2);
+    font-size: 12px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    margin: 10px 0;
+}
+.article h2{
+    color: var(--font_c1);
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    text-align: justify;
+}
+.left .mas{
+    padding: 50px 0;
+}
+.left a{
+    color: var(--font_c2);
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    text-decoration: none;
+}
+.left hr{
+    background-color: var(--font_c2);
+    width: 100px;
+    height: 2px;
+    margin: 10px 0;
+}
+
+
+.right{
+    margin: 0 20px;
+    padding-top: 50px;
+}
+.right .etapaD{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+.right .etapa{
+    display: flex;
+    flex-direction: column;
+}
+.right p{
+    color: var(--font_c2);
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    line-height: 25px;
+}
+.right h2{
+    color: var(--font_c1);
+    font-size: 30px;
+    font-weight: 600;
+}
+.right h3{
+    color: gray;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    width: 300px;
+    padding-right:30px;
+}
+.right hr{
+    background-color: gray;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+}
 /*#endregion */
 
 /*#region Projects made*/
