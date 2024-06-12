@@ -36,8 +36,15 @@ body{
     background-color: var(--bkg_c1);
 }
 
+hr{
+    border: 0;
+}
+
 button{
     font-family: 'IBM Plex Sans';
+}
+button:hover{
+    cursor: pointer;
 }
 
 /*#region Header */
@@ -216,8 +223,7 @@ h1 span{
     width: 400px;
     z-index: 1;
     filter: grayscale(100%) saturate(100%) brightness(80%);
-    border-radius: 
-    5px;
+    border-radius: 10px;
 }
 .itsaBorder{
     position: relative;
@@ -225,7 +231,7 @@ h1 span{
     width: 400px;
     height: 525px;
     border: 2px var(--contrast_c1) solid;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .infoAboutMe{
     display: flex;
@@ -346,26 +352,133 @@ h1 span{
 /*#endregion*/
 
 /*#region Footer*/
-.footer{
+footer{
     background-color: var(--bkg_c1);
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
-
-.fDivMed{
+.footerInfo{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+.newsletter{
+    width: 400px;
+}
+.newsletter p{
+    color: var(--font_c1);
+    font-size: 25px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+}
+.newsletter input{
+    width: 90%;
+    border: none;
+    background-color: var(--bkg_c1);
+}
+.newsletter .bi-arrow-right{
+    font-size: 20px;
+    color: var(--font_c3);
+}
+.newsletter form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.newsletter hr{
+    width: 100%;
+}
+.newsletter .ratings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.newsletter img{
+    border-radius: 5px;
+    width: 180px;
 }
 
-hr{
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links h3{
+    color: var(--font_c1);
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+.links a{
+    text-decoration: none;
+    color: var(--font_c2);
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 450;
+    margin: 10px 0;
+}
+
+.consultas{
+    display: flex;
+    flex-direction: column;
+}
+.consultas h3{
+    color: var(--font_c1);
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+.consultas p{
+    color: var(--font_c2);
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 450;
+    margin: 10px 0;
+}
+
+.allServices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.allServices h2{
+    color: var(--font_c2);
+    font-size: 20px;
+    font-family: 'IBM Plex Sans';
+}
+.allServices .plus{
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+footer hr{
     background-color: gray;
     height: 2px;
     width: 70vw;
 }
-
-.plus{
-    width: 30px;
-    height: 30px;
-    filter: invert(100%);
+.pageBottom{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .SNScontainer{
+    display: flex;
+    flex-direction: row;
+}
+.pageBottom a{
+    color: grey;
+    text-decoration: none;
+}
+.pageBottom p{
+    color: grey;
 }
 /*#endregion*/
