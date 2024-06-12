@@ -349,6 +349,81 @@ h1 span{
 /*#endregion*/
 
 /*#region Contact us*/
+.contactUs{
+    background-color: var(--contrast_c2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/Bola\ negra.png');
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-x: 50%;
+    background-position-y: 40px;
+}
+.listo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.listo h1{
+    color: var(--font_c1);
+    font-size: 80px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    margin-top: 100px;
+    width: 800px;
+    text-align: center;
+}
+.listo p{
+    color: var(--font_c1);
+    font-size: 24px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    z-index: 1;
+}
+.listo hr{
+    background-color: var(--contrast_c2);
+    width: 180px;
+    height: 15px;
+    position: relative;
+    top: -12px;
+}
+
+.formularioContacto{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formularioContacto form{
+    width: 100%;
+}
+.formularioContacto label{
+    color: var(--font_c1);
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 450;
+}
+.formularioContacto input{
+    color: black;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans';
+    font-weight: 400;
+    margin: 7px 0;
+    padding: 5px;
+}
+.formularioContacto button{
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--bkg_c1);
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.formularioContacto button:hover{
+    background-color: var(--hover_c1);
+}
 /*#endregion*/
 
 /*#region Footer*/
@@ -376,6 +451,7 @@ footer{
     width: 90%;
     border: none;
     background-color: var(--bkg_c1);
+    font-family: 'IBM Plex Sans';    
 }
 .newsletter .bi-arrow-right{
     font-size: 20px;
@@ -398,7 +474,7 @@ footer{
     margin: 50px 0;
 }
 .newsletter img{
-    border-radius: 5px;
+    border-radius: 10px;
     width: 180px;
 }
 
