@@ -6,3 +6,53 @@
         height: 756px;
     }
 }
+
+@media(max-width: 1440px){
+    .banner{
+        height: 100px;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .estrella{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media(max-width: 1024px){
+    .banner{
+        height: 100px;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .estrella{
+        width: 25px;
+        height: 25px;
+    }
+    .imagenesAboutMe{
+        display: none;
+    }
+    .newsletter{
+        width: 300px;
+    }
+    .newsletter img{
+        width: 120px;
+    }
+    .clientReviews img{
+        display: none;
+    }
+    .hero{
+        background-position-x: 140%;
+    }
+    .videoSobreMi{
+        right: 10vw;
+    }
+    .header nav{
+        display: none;
+    }
+    header .lista{
+        display: block;
+    }
+}

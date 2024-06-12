@@ -52,7 +52,7 @@ button:hover{
 .header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
 }
@@ -82,6 +82,9 @@ button:hover{
 }
 .header button:hover{
     cursor: pointer;
+}
+.header .lista{
+    display: none;
 }
 /*#endregion*/
 
@@ -268,12 +271,13 @@ h1 span{
 .campos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .campos .subCampos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 40px;
+    margin: 10px 20px 0 20px;
 }
 .campos p{
     text-align: center;
@@ -452,7 +456,7 @@ article img{
     font-size: 20px;
     font-family: 'IBM Plex Sans';
     font-weight: 500;
-    width: 300px;
+    width: 200px;
     padding-right:30px;
 }
 .right hr{
